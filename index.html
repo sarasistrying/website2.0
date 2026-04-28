@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <title> Login system</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+        <div class="form-box active" id="login-form">
+            <form action="">
+            <h2>Login</h2>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" Password="Email" required>
+            <button type="submit" name="login">Login</button>
+            <p> Don't have an account? <a href="#" onclick="showForm('register-form')"> Register</a></p>
+            </form>
+        </div>
+
+        <div class="form-box" id="register-form">
+            <form action="">
+            <input type ="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" Password="Email" required>
+            <button type="submit" name="register">Register</button>
+            <p> Already have an account? <a href="#" onclick="showForm('login-form'); return false;"> </a>Login</a></p>
+            </form>
+        </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
